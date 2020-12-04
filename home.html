@@ -5,23 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microblog</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <header class="navbar">
         <div class="navbar__brand">
-            <img src="images/microblog-logo.svg" alt="The Microblog logo">
+            <img class="navbar__logo" src="images/microblog-logo.svg" alt="The Microblog logo">
             <span class="navbar__header">Microblog</span>
-            <ul class="navbar__navigation">
-                <li class="navbar__navigation-item">
-                    <a class="navbar__link" href="#">Recent</a>
-                </li>
-                <li class="navbar__navigation-item">
-                    <a class="navbar__link" href="#">Calendar</a>
-                </li>
-            </ul>
         </div>
+        <ul class="navbar__navigation">
+            <li class="navbar__navigation-item">
+                <a class="navbar__link" href="#">Recent</a>
+            </li>
+            <li class="navbar__navigation-item">
+                <a class="navbar__link" href="#">Calendar</a>
+            </li>
+        </ul>
     </header>
 
     <main>
