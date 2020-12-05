@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microblog</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="navbar__brand">
+            <img class="navbar__logo" src="../static/images/microblog-logo.svg" alt="The Microblog logo">
+            <span class="navbar__header">Microblog</span>
+        </div>
+        <ul class="navbar__navigation">
+            <li class="navbar__navigation-item">
+                <a class="navbar__link" href="#">Recent</a>
+            </li>
+            <li class="navbar__navigation-item">
+                <a class="navbar__link" href="#">Calendar</a>
+            </li>
+        </ul>
+    </header>
+
+    <main class="main">
+        <section>
+            <h1>Add new entry</h1>
+            <form class="form" action="/entry" method="POST">
+                <p class="form__input">
+                    <label class="form__label" for="entry"">Entry contents</label>
+                    <textarea class=" form__textarea" name=" content" id="entry"
+                        aria-label="Entry contents"></textarea>
+                </p>
+                <button class="form__submit" type="submit">add entry</button>
+            </form>
+
+        </section>
+        <section>
+            <h1>Recent posts</h1>
+            <!-- this article is going to be create everytime when user wants to create new section -->
+            <article class="entry">
+                <div>
+                    <h2 class="entry__title">A bit of chill day today</h2>
+                    <time datetime=" 3-12-2020">• Dec 4</time>
+                </div>
+                <p class="entry__content">
+                    Today I couldn't do much programming, but that's OK! Can't be too awesome every day now!
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <section class="left">
+                <a href="#" class="footer__item">Made by Kamil Budzik</a>
+                <a href="#" class="footer__item">Check out my other projects</a>
+            </section>
+            <section class="right">
+                <div class="footer__column">
+                    <a href="#" class="footer__item">Recent</a>
+                    <a href="#" class="footer__item">Calendar</a>
+                </div>
+                <div class="footer__column">
+                    <a href="#" class="footer__item">About</a>
+                    <a href="#" class="footer__item">How this was made</a>
+                </div>
+            </section>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
